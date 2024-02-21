@@ -65,7 +65,6 @@ function Modal({children}){
     {children}
     </ModalContext.Provider>
   );
-
 }
 
 function Open ({children, opens: opensWindowName}) {

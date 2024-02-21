@@ -44,7 +44,7 @@ export function useBookings(){
       if(page > 1){
 
         queryClient.prefetchQuery({
-          queryKey: ["bookings", filter, sortBy, page - 1], //whenever filter changes react query refetch the data..it worls the sme as useEffect hook, this is dependency array
+          queryKey: ["bookings", filter, sortBy, page - 1], //whenever filter changes react query refetch the data..it works the same as useEffect hook, this is dependency array
           queryFn: () => getBookings({filter, sortBy, page: page - 1}),
         })
       }
